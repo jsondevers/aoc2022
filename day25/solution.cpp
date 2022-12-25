@@ -12,47 +12,47 @@ using namespace std;
 vector<uint64_t> pow5;
 
 auto snafuToNumber(string str) -> uint64_t {
-  uint64_t ret = 0;
+  uint64_t number = 0;
 
   reverse(str.begin(), str.end());
   for (int i = 0; i < str.size(); ++i) {
     if (isdigit(str[i]))
-      ret += pow5[i] * (str[i] - '0');
+      number += pow5[i] * (str[i] - '0');
 
     if (str[i] == '-')
-      ret += -pow5[i];
+      number += -pow5[i];
 
     if (str[i] == '=')
-      ret += -2 * pow5[i];
+      number += -2 * pow5[i];
   }
 
-  return ret;
+  return number;
 }
 
 auto numberToSnafu(uint64_t num) -> string {
-  string ret = "";
+  string snafu = "";
 
   while (num) {
     switch (num % 5) {
     case 0:
-      ret += '0';
+      snafu += '0';
       num /= 5;
       break;
     case 1:
-      ret += '1';
+      snafu += '1';
       num /= 5;
       break;
     case 2:
-      ret += '2';
+      snafu += '2';
       num /= 5;
       break;
     case 3:
-      ret += '=';
+      snafu += '=';
       num /= 5;
       ++num;
       break;
     case 4:
-      ret += '-';
+      snafu += '-';
       num /= 5;
       ++num;
       break;
@@ -63,9 +63,9 @@ auto numberToSnafu(uint64_t num) -> string {
     }
   }
 
-  reverse(ret.begin(), ret.end());
+  reverse(snafu.begin(), snafu.end());
 
-  return ret;
+  return snafu;
 }
 
 auto main() -> int {

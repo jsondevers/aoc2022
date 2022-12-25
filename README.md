@@ -2,7 +2,7 @@
 
 ## Participated in the [Advent of Code](https://adventofcode.com/2022/about) Event for December 2022
 
-### Throughout these daily challenges, I used a randomizer to select what language I would use for a certain day's problem. Towards the end of the challenge, I would see others solutions in order to create my solutions.
+### This was my first time partipating in AoC and it was really enlightening to see many different solutions in various languages. I wanted to improve my all around programming skills in certain languages. Throughout these daily challenges, I used a randomizer to select what language I would use for a certain day's problem. Towards the end of the challenge, I sometimes had to reference solutions. 
 
 #### The following languages were possible options:
 
