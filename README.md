@@ -2,7 +2,7 @@
 
 ## Participated in the [Advent of Code](https://adventofcode.com/2022/about) Event for December 2022
 
-### Throughout these daily challenges, I used a randomizer to select what language I would use for a certain day's problem
+### Throughout these daily challenges, I used a randomizer to select what language I would use for a certain day's problem. Towards the end of the challenge, I would see others solutions in order to create my solutions.
 
 #### The following languages were possible options:
 
